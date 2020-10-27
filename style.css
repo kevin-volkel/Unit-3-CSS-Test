@@ -47,3 +47,282 @@ Base styles used by All Screens DO NOT EDIT ABOVE
 
 /* HTML and Body Styles */
 
+:root{
+    --html-background: rgb(246, 177, 177);
+    --shadow: rgb(51, 51, 51);
+    --nav-active: rgb(220, 27, 27);
+    --spotlight: rgb(171, 171, 171);
+    --text-background: rgb(211, 211, 211);
+    --text-color: rgb(111, 111, 111);
+}
+
+html{
+    background-color: var(--html-background);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background-color: white;
+    max-width: 1024px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 25px var(--shadow), -10px 10px 25px var(--shadow);
+}
+
+body header{
+    background-color: white;
+    width: 100%;
+}
+
+img#logoImage{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 15px;
+}
+
+nav.top ul li{
+    margin: 10px;
+}
+
+nav.top ul li a{
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+
+nav.top ul li a::hover{
+    color: var(--nav-active);
+    text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+}
+
+article p:nth-of-type(2) img{
+    float: right;
+    width: 45%;
+    margin: 0 0 120px 50px;
+    transform: translate(0, -60px);
+    transform: rotate(30deg);
+    box-shadow: 10px -10px 30px var(--shadow);
+}
+
+section.spotlight{
+    background-color: var(--spotlight);
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+section.spotlight h1{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-shadow: white -2px 0px 1px, white -5px 0px 30px;
+    padding: 20px 15px 10px 0;
+    text-align: right;
+}
+
+section.spotlight img{
+    width: 35%;
+    float: left;
+    display: block;
+    margin: 20px 20px 10px 15px;
+}
+
+section.spotlight p{
+    margin-bottom: 0;
+}
+
+aside{
+    background-color: var(--text-background);
+}
+
+aside a{
+    color: var(--nav-active);
+}
+
+aside h1{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    margin: 20px 0px 25px 0px;
+}
+
+aside img{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+dl{
+    text-align: center;
+}
+
+dl dd{
+    margin-bottom: 20px;
+}
+
+nav#bottom{
+    background-color: var(--nav-active);
+    color: var(--text-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+nav#bottom ul li a:link{
+    color: white;
+}
+
+footer p{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+
+nav#bottom ul{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 150px;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        background-color: var(--shadow);
+        color: var(--text-background);
+    }
+
+    aside{
+        display: none;
+    }
+
+    img{
+        display: none;
+    }
+
+    section.spotlight{
+        display: none;
+    }
+
+    nav.top ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    nav.top ul li{
+        font-size: 2.2rem;
+        flex-basis: 130px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    nav.top ul li a{
+        padding: 50% 0;
+    }
+
+    nav.top ul li:nth-of-type(1){
+        background-image: url(images/cw_image01.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    nav.top ul li:nth-of-type(2){
+        background-image: url(images/cw_image02.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    nav.top ul li:nth-of-type(3){
+        background-image: url(images/cw_image03.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    nav.top ul li:nth-of-type(4){
+        background-image: url(images/cw_image04.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    nav.top ul li:nth-of-type(5){
+        background-image: url(images/cw_image05.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    nav.top ul li:nth-of-type(6){
+        background-image: url(images/cw_image06.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    p#links{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    p#links a{
+        background-color: var(--nav-active);
+        color: white;
+        text-decoration-line: none;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 481px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    article{
+        flex-basis: 400px;
+        flex-grow: 2;
+        flex-shrink: 1;
+    }
+
+    aside{
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+
+    nav.top ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: var(--text-background);
+        height: 50px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    nav.top ul li{
+        flex-basis: 80px;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+
+    p#links{
+        display: none;
+    }
+}
