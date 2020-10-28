@@ -283,7 +283,7 @@ nav#bottom ul{
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     p#links a{
@@ -321,7 +321,7 @@ nav#bottom ul{
         background-color: var(--shadow);
         height: 50px;
         align-content: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     nav.top ul li{
