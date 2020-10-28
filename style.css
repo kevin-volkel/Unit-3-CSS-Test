@@ -188,7 +188,7 @@ nav#bottom ul li{
     line-height: 1.8rem;
 }
 
-nav#bottom ul li a:link{
+nav#bottom ul li a{
     color: white;
 }
 
@@ -318,10 +318,10 @@ nav#bottom ul{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        background-color: var(--text-background);
+        background-color: var(--shadow);
         height: 50px;
-        align-items: center;
-        justify-items: center;
+        align-content: center;
+        justify-content: space-evenly;
     }
 
     nav.top ul li{
