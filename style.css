@@ -64,7 +64,7 @@ html{
 
 body{
     background-color: white;
-    max-width: 1024px;
+    width: 1024px;
     margin: 0 auto;
     box-shadow: 10px 10px 25px var(--shadow), -10px 10px 25px var(--shadow);
 }
@@ -77,7 +77,7 @@ body header{
 img#logoImage{
     display: block;
     width: 100%;
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
 }
 
@@ -99,7 +99,7 @@ nav.top ul li a{
     padding: 5% 0 5% 0;
 }
 
-nav.top ul li a::hover{
+nav.top ul li a:hover{
     color: var(--nav-active);
     text-shadow: 0px 0px 2px black, 0px 0px 15px white;
 }
@@ -108,8 +108,7 @@ article p:nth-of-type(2) img{
     float: right;
     width: 45%;
     margin: 0 0 120px 50px;
-    transform: translate(0, -60px);
-    transform: rotate(30deg);
+    transform: translate(0, 60px) rotate(30deg);
     box-shadow: 10px -10px 30px var(--shadow);
 }
 
@@ -170,6 +169,10 @@ dl dd{
     margin-bottom: 20px;
 }
 
+footer{
+    width: 100%;
+}
+
 nav#bottom{
     background-color: var(--nav-active);
     color: var(--text-color);
@@ -178,6 +181,11 @@ nav#bottom{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+}
+
+nav#bottom ul li{
+    font-size: 1rem;
+    line-height: 1.8rem;
 }
 
 nav#bottom ul li a:link{
@@ -195,7 +203,7 @@ footer p{
 
 nav#bottom ul{
     flex-grow: 0;
-    flex-shrink: 1;
+    flex-shrink: auto;
     flex-basis: 150px;
 }
 
