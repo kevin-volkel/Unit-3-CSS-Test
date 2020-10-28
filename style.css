@@ -64,7 +64,7 @@ html{
 
 body{
     background-color: white;
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     box-shadow: 10px 10px 25px var(--shadow), -10px 10px 25px var(--shadow);
 }
@@ -77,7 +77,7 @@ body header{
 img#logoImage{
     display: block;
     width: 100%;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -239,7 +239,7 @@ nav#bottom ul{
     }
 
     nav.top ul li a{
-        padding: 50% 0;
+        padding: 50% 0 50% 0;
     }
 
     nav.top ul li:nth-of-type(1){
